@@ -1,0 +1,1175 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>EduNova | Explore Courses</title>
+
+    <link rel="stylesheet" href="explore.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+
+
+<body>
+
+
+<!-- ================= NAVBAR ================= -->
+
+<header class="navbar">
+
+    <div class="logo">
+        <i class="fa-solid fa-graduation-cap"></i>
+        Edu<span>Nova</span>
+    </div>
+
+
+    <nav>
+
+        <a href="home.html">
+            Home
+        </a>
+
+        <a href="courses.html" class="active">
+            Courses
+        </a>
+
+        <a href="about.html">
+            About
+        </a>
+
+        <a href="contact.html">
+            Contact
+        </a>
+
+    </nav>
+
+
+    <div class="nav-buttons">
+
+        <button class="login-btn">
+            Log In
+        </button>
+
+        <button class="signup-btn">
+            Sign Up
+        </button>
+
+    </div>
+
+</header>
+
+
+
+<!-- ================= HERO ================= -->
+
+<section class="explore-hero">
+
+    <div class="hero-content">
+
+        <span>
+            EXPLORE EDUNOVA
+        </span>
+
+        <h1>
+            Find the Right Course
+            <strong>For Your Future</strong>
+        </h1>
+
+        <p>
+            Explore hundreds of courses designed to help you
+            learn new skills, grow your career and achieve your goals.
+        </p>
+
+
+        <div class="search-box">
+
+            <i class="fa-solid fa-magnifying-glass"></i>
+
+            <input
+                type="text"
+                placeholder="What do you want to learn?"
+            >
+
+            <button>
+                Search
+            </button>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ================= MAIN CONTENT ================= -->
+
+<section class="explore-section">
+
+
+    <!-- ================= SIDEBAR ================= -->
+
+    <aside class="filters">
+
+
+        <div class="filter-header">
+
+            <h3>
+                Filters
+            </h3>
+
+            <button>
+                Clear All
+            </button>
+
+        </div>
+
+
+        <!-- CATEGORY -->
+
+        <div class="filter-group">
+
+            <h4>
+                Categories
+            </h4>
+
+
+            <label>
+                <input type="checkbox">
+                Programming
+                <span>24</span>
+            </label>
+
+
+            <label>
+                <input type="checkbox">
+                Web Development
+                <span>22</span>
+            </label>
+
+
+            <label>
+                <input type="checkbox">
+                Artificial Intelligence
+                <span>18</span>
+            </label>
+
+
+            <label>
+                <input type="checkbox">
+                Data Science
+                <span>16</span>
+            </label>
+
+
+            <label>
+                <input type="checkbox">
+                Design
+                <span>15</span>
+            </label>
+
+
+            <label>
+                <input type="checkbox">
+                Business
+                <span>12</span>
+            </label>
+
+        </div>
+
+
+        <!-- LEVEL -->
+
+        <div class="filter-group">
+
+            <h4>
+                Level
+            </h4>
+
+
+            <label>
+                <input type="checkbox">
+                Beginner
+                <span>45</span>
+            </label>
+
+
+            <label>
+                <input type="checkbox">
+                Intermediate
+                <span>38</span>
+            </label>
+
+
+            <label>
+                <input type="checkbox">
+                Advanced
+                <span>20</span>
+            </label>
+
+        </div>
+
+
+        <!-- RATING -->
+
+        <div class="filter-group">
+
+            <h4>
+                Rating
+            </h4>
+
+
+            <label>
+                <input type="checkbox">
+
+                <span class="stars">
+                    ★★★★★
+                </span>
+
+                <small>4.5 & above</small>
+
+            </label>
+
+
+            <label>
+                <input type="checkbox">
+
+                <span class="stars">
+                    ★★★★☆
+                </span>
+
+                <small>4.0 & above</small>
+
+            </label>
+
+        </div>
+
+
+        <!-- PRICE -->
+
+        <div class="filter-group">
+
+            <h4>
+                Price
+            </h4>
+
+
+            <label>
+                <input type="checkbox">
+                Free
+            </label>
+
+
+            <label>
+                <input type="checkbox">
+                Paid
+            </label>
+
+        </div>
+
+
+    </aside>
+
+
+
+    <!-- ================= COURSES AREA ================= -->
+
+    <main class="courses-area">
+
+
+        <div class="course-top">
+
+            <div>
+
+                <h2>
+                    All Courses
+                </h2>
+
+                <p>
+                    120+ courses available
+                </p>
+
+            </div>
+
+
+            <select class="sort">
+
+                <option>
+                    Most Popular
+                </option>
+
+                <option>
+                    Highest Rated
+                </option>
+
+                <option>
+                    Newest
+                </option>
+
+                <option>
+                    Price: Low to High
+                </option>
+
+                <option>
+                    Price: High to Low
+                </option>
+
+            </select>
+
+        </div>
+
+
+
+        <!-- ================= COURSE GRID ================= -->
+
+        <div class="course-grid">
+
+
+            <!-- COURSE 1 -->
+
+            <div class="course-card">
+
+                <div class="course-image python">
+
+                    <i class="fa-brands fa-python"></i>
+
+                    <span>
+                        BESTSELLER
+                    </span>
+
+                </div>
+
+
+                <div class="course-info">
+
+                    <small>
+                        PROGRAMMING
+                    </small>
+
+                    <h3>
+                        Complete Python Programming Masterclass
+                    </h3>
+
+                    <p>
+                        Learn Python from basics to advanced
+                        concepts with practical projects.
+                    </p>
+
+
+                    <div class="rating">
+
+                        <b>
+                            4.9
+                        </b>
+
+                        <span>
+                            ★★★★★
+                        </span>
+
+                        <em>
+                            (2,340)
+                        </em>
+
+                    </div>
+
+
+                    <div class="details">
+
+                        <span>
+                            <i class="fa-regular fa-clock"></i>
+                            32 Hours
+                        </span>
+
+                        <span>
+                            <i class="fa-solid fa-signal"></i>
+                            Beginner
+                        </span>
+
+                    </div>
+
+
+                    <div class="course-bottom">
+
+                        <div class="price">
+                            ₹799
+                            <del>₹1,999</del>
+                        </div>
+
+                        <button>
+                            View Course
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- COURSE 2 -->
+
+            <div class="course-card">
+
+                <div class="course-image ai">
+
+                    <i class="fa-solid fa-brain"></i>
+
+                    <span>
+                        POPULAR
+                    </span>
+
+                </div>
+
+
+                <div class="course-info">
+
+                    <small>
+                        ARTIFICIAL INTELLIGENCE
+                    </small>
+
+                    <h3>
+                        Artificial Intelligence & Machine Learning
+                    </h3>
+
+                    <p>
+                        Master AI and machine learning concepts
+                        with real-world applications.
+                    </p>
+
+
+                    <div class="rating">
+
+                        <b>
+                            4.8
+                        </b>
+
+                        <span>
+                            ★★★★★
+                        </span>
+
+                        <em>
+                            (1,870)
+                        </em>
+
+                    </div>
+
+
+                    <div class="details">
+
+                        <span>
+                            <i class="fa-regular fa-clock"></i>
+                            40 Hours
+                        </span>
+
+                        <span>
+                            <i class="fa-solid fa-signal"></i>
+                            Intermediate
+                        </span>
+
+                    </div>
+
+
+                    <div class="course-bottom">
+
+                        <div class="price">
+                            ₹999
+                            <del>₹2,499</del>
+                        </div>
+
+                        <button>
+                            View Course
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- COURSE 3 -->
+
+            <div class="course-card">
+
+                <div class="course-image web">
+
+                    <i class="fa-solid fa-code"></i>
+
+                    <span>
+                        NEW
+                    </span>
+
+                </div>
+
+
+                <div class="course-info">
+
+                    <small>
+                        WEB DEVELOPMENT
+                    </small>
+
+                    <h3>
+                        Full Stack Web Development
+                    </h3>
+
+                    <p>
+                        Build modern responsive websites and
+                        full-stack applications.
+                    </p>
+
+
+                    <div class="rating">
+
+                        <b>
+                            4.9
+                        </b>
+
+                        <span>
+                            ★★★★★
+                        </span>
+
+                        <em>
+                            (1,250)
+                        </em>
+
+                    </div>
+
+
+                    <div class="details">
+
+                        <span>
+                            <i class="fa-regular fa-clock"></i>
+                            45 Hours
+                        </span>
+
+                        <span>
+                            <i class="fa-solid fa-signal"></i>
+                            Intermediate
+                        </span>
+
+                    </div>
+
+
+                    <div class="course-bottom">
+
+                        <div class="price">
+                            ₹1,199
+                            <del>₹2,999</del>
+                        </div>
+
+                        <button>
+                            View Course
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- COURSE 4 -->
+
+            <div class="course-card">
+
+                <div class="course-image data">
+
+                    <i class="fa-solid fa-chart-line"></i>
+
+                </div>
+
+
+                <div class="course-info">
+
+                    <small>
+                        DATA SCIENCE
+                    </small>
+
+                    <h3>
+                        Data Science & Analytics
+                    </h3>
+
+                    <p>
+                        Learn Python, statistics, visualization
+                        and data analysis.
+                    </p>
+
+
+                    <div class="rating">
+
+                        <b>
+                            4.7
+                        </b>
+
+                        <span>
+                            ★★★★★
+                        </span>
+
+                        <em>
+                            (980)
+                        </em>
+
+                    </div>
+
+
+                    <div class="details">
+
+                        <span>
+                            <i class="fa-regular fa-clock"></i>
+                            36 Hours
+                        </span>
+
+                        <span>
+                            <i class="fa-solid fa-signal"></i>
+                            Intermediate
+                        </span>
+
+                    </div>
+
+
+                    <div class="course-bottom">
+
+                        <div class="price">
+                            ₹899
+                            <del>₹2,299</del>
+                        </div>
+
+                        <button>
+                            View Course
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- COURSE 5 -->
+
+            <div class="course-card">
+
+                <div class="course-image java">
+
+                    <i class="fa-brands fa-java"></i>
+
+                </div>
+
+
+                <div class="course-info">
+
+                    <small>
+                        PROGRAMMING
+                    </small>
+
+                    <h3>
+                        Java & Object Oriented Programming
+                    </h3>
+
+                    <p>
+                        Master Java, OOP concepts and
+                        problem-solving skills.
+                    </p>
+
+
+                    <div class="rating">
+
+                        <b>
+                            4.8
+                        </b>
+
+                        <span>
+                            ★★★★★
+                        </span>
+
+                        <em>
+                            (1,420)
+                        </em>
+
+                    </div>
+
+
+                    <div class="details">
+
+                        <span>
+                            <i class="fa-regular fa-clock"></i>
+                            28 Hours
+                        </span>
+
+                        <span>
+                            <i class="fa-solid fa-signal"></i>
+                            Beginner
+                        </span>
+
+                    </div>
+
+
+                    <div class="course-bottom">
+
+                        <div class="price">
+                            ₹699
+                            <del>₹1,799</del>
+                        </div>
+
+                        <button>
+                            View Course
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- COURSE 6 -->
+
+            <div class="course-card">
+
+                <div class="course-image design">
+
+                    <i class="fa-solid fa-pen-ruler"></i>
+
+                </div>
+
+
+                <div class="course-info">
+
+                    <small>
+                        DESIGN
+                    </small>
+
+                    <h3>
+                        UI/UX Design Masterclass
+                    </h3>
+
+                    <p>
+                        Learn UI/UX design, Figma and create
+                        beautiful digital experiences.
+                    </p>
+
+
+                    <div class="rating">
+
+                        <b>
+                            4.9
+                        </b>
+
+                        <span>
+                            ★★★★★
+                        </span>
+
+                        <em>
+                            (760)
+                        </em>
+
+                    </div>
+
+
+                    <div class="details">
+
+                        <span>
+                            <i class="fa-regular fa-clock"></i>
+                            25 Hours
+                        </span>
+
+                        <span>
+                            <i class="fa-solid fa-signal"></i>
+                            Beginner
+                        </span>
+
+                    </div>
+
+
+                    <div class="course-bottom">
+
+                        <div class="price">
+                            ₹749
+                            <del>₹1,999</del>
+                        </div>
+
+                        <button>
+                            View Course
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- COURSE 7 -->
+
+            <div class="course-card">
+
+                <div class="course-image sql">
+
+                    <i class="fa-solid fa-database"></i>
+
+                </div>
+
+
+                <div class="course-info">
+
+                    <small>
+                        DATA & DATABASE
+                    </small>
+
+                    <h3>
+                        SQL & Database Management
+                    </h3>
+
+                    <p>
+                        Learn SQL queries, database design,
+                        joins and data management.
+                    </p>
+
+
+                    <div class="rating">
+
+                        <b>
+                            4.8
+                        </b>
+
+                        <span>
+                            ★★★★★
+                        </span>
+
+                        <em>
+                            (890)
+                        </em>
+
+                    </div>
+
+
+                    <div class="details">
+
+                        <span>
+                            <i class="fa-regular fa-clock"></i>
+                            20 Hours
+                        </span>
+
+                        <span>
+                            <i class="fa-solid fa-signal"></i>
+                            Beginner
+                        </span>
+
+                    </div>
+
+
+                    <div class="course-bottom">
+
+                        <div class="price">
+                            ₹599
+                            <del>₹1,499</del>
+                        </div>
+
+                        <button>
+                            View Course
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- COURSE 8 -->
+
+            <div class="course-card">
+
+                <div class="course-image javascript">
+
+                    <i class="fa-brands fa-js"></i>
+
+                </div>
+
+
+                <div class="course-info">
+
+                    <small>
+                        WEB DEVELOPMENT
+                    </small>
+
+                    <h3>
+                        JavaScript From Beginner to Advanced
+                    </h3>
+
+                    <p>
+                        Build interactive websites using
+                        modern JavaScript.
+                    </p>
+
+
+                    <div class="rating">
+
+                        <b>
+                            4.9
+                        </b>
+
+                        <span>
+                            ★★★★★
+                        </span>
+
+                        <em>
+                            (1,680)
+                        </em>
+
+                    </div>
+
+
+                    <div class="details">
+
+                        <span>
+                            <i class="fa-regular fa-clock"></i>
+                            30 Hours
+                        </span>
+
+                        <span>
+                            <i class="fa-solid fa-signal"></i>
+                            Intermediate
+                        </span>
+
+                    </div>
+
+
+                    <div class="course-bottom">
+
+                        <div class="price">
+                            ₹849
+                            <del>₹2,099</del>
+                        </div>
+
+                        <button>
+                            View Course
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- ================= PAGINATION ================= -->
+
+        <div class="pagination">
+
+            <button class="previous">
+                <i class="fa-solid fa-chevron-left"></i>
+            </button>
+
+            <button class="page active">
+                1
+            </button>
+
+            <button class="page">
+                2
+            </button>
+
+            <button class="page">
+                3
+            </button>
+
+            <span>
+                ...
+            </span>
+
+            <button class="page">
+                12
+            </button>
+
+            <button class="next">
+                <i class="fa-solid fa-chevron-right"></i>
+            </button>
+
+        </div>
+
+
+    </main>
+
+</section>
+
+
+
+<!-- ================= CTA ================= -->
+
+<section class="cta">
+
+    <div class="cta-content">
+
+        <div class="cta-icon">
+
+            <i class="fa-solid fa-rocket"></i>
+
+        </div>
+
+        <h2>
+            Can't Find What You're Looking For?
+        </h2>
+
+        <p>
+            New courses are added regularly.
+            Start exploring and find your perfect course.
+        </p>
+
+        <a href="contact.html">
+            Contact Us
+            <i class="fa-solid fa-arrow-right"></i>
+        </a>
+
+    </div>
+
+</section>
+
+
+
+<!-- ================= FOOTER ================= -->
+
+<footer>
+
+    <div class="footer-content">
+
+
+        <div class="footer-brand">
+
+            <div class="logo">
+
+                <i class="fa-solid fa-graduation-cap"></i>
+
+                Edu<span>Nova</span>
+
+            </div>
+
+            <p>
+                Learn anytime, anywhere and build
+                skills for your future.
+            </p>
+
+            <div class="socials">
+
+                <i class="fa-brands fa-instagram"></i>
+
+                <i class="fa-brands fa-facebook"></i>
+
+                <i class="fa-brands fa-linkedin"></i>
+
+                <i class="fa-brands fa-youtube"></i>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-column">
+
+            <h4>
+                Platform
+            </h4>
+
+            <a href="courses.html">
+                Courses
+            </a>
+
+            <a href="#">
+                Instructors
+            </a>
+
+            <a href="#">
+                Pricing
+            </a>
+
+            <a href="#">
+                Certificates
+            </a>
+
+        </div>
+
+
+        <div class="footer-column">
+
+            <h4>
+                Company
+            </h4>
+
+            <a href="about.html">
+                About Us
+            </a>
+
+            <a href="contact.html">
+                Contact
+            </a>
+
+            <a href="#">
+                Careers
+            </a>
+
+            <a href="#">
+                Blog
+            </a>
+
+        </div>
+
+
+        <div class="footer-column">
+
+            <h4>
+                Support
+            </h4>
+
+            <a href="#">
+                Help Center
+            </a>
+
+            <a href="#">
+                FAQs
+            </a>
+
+            <a href="#">
+                Privacy Policy
+            </a>
+
+            <a href="#">
+                Terms
+            </a>
+
+        </div>
+
+    </div>
+
+
+    <div class="copyright">
+
+        © 2026 EduNova. All Rights Reserved.
+
+    </div>
+
+</footer>
+
+
+</body>
+
+</html>
+```

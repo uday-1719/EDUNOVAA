@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>EduNova | Login</title>
+
+    <link rel="stylesheet" href="login.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+
+
+
+<body>
+
+
+<!-- ================= LEFT SIDE ================= -->
+
+<div class="login-left">
+
+    <div class="left-content">
+
+        <div class="logo">
+
+            <i class="fa-solid fa-graduation-cap"></i>
+
+            Edu<span>Nova</span>
+
+        </div>
+
+
+        <div class="hero-text">
+
+            <span>
+                WELCOME BACK
+            </span>
+
+            <h1>
+                Continue Your
+                <strong>Learning Journey.</strong>
+            </h1>
+
+            <p>
+                Log in to access your courses, track your progress
+                and continue learning anytime, anywhere.
+            </p>
+
+        </div>
+
+
+        <div class="features">
+
+            <div class="feature">
+
+                <div class="feature-icon">
+                    <i class="fa-solid fa-book-open"></i>
+                </div>
+
+                <div>
+                    <h3>
+                        Learn at Your Pace
+                    </h3>
+
+                    <p>
+                        Access your courses whenever you want.
+                    </p>
+                </div>
+
+            </div>
+
+
+            <div class="feature">
+
+                <div class="feature-icon">
+                    <i class="fa-solid fa-chart-line"></i>
+                </div>
+
+                <div>
+                    <h3>
+                        Track Your Progress
+                    </h3>
+
+                    <p>
+                        Keep track of your learning journey.
+                    </p>
+                </div>
+
+            </div>
+
+
+            <div class="feature">
+
+                <div class="feature-icon">
+                    <i class="fa-solid fa-certificate"></i>
+                </div>
+
+                <div>
+                    <h3>
+                        Earn Certificates
+                    </h3>
+
+                    <p>
+                        Complete courses and earn certificates.
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+
+<!-- ================= RIGHT SIDE ================= -->
+
+<div class="login-right">
+
+    <div class="login-container">
+
+
+        <div class="mobile-logo">
+
+            <div class="logo">
+
+                <i class="fa-solid fa-graduation-cap"></i>
+
+                Edu<span>Nova</span>
+
+            </div>
+
+        </div>
+
+
+        <div class="login-heading">
+
+            <h2>
+                Welcome Back!
+            </h2>
+
+            <p>
+                Enter your details to access your account.
+            </p>
+
+        </div>
+
+
+
+        <!-- LOGIN FORM -->
+
+        <form id="loginForm">
+
+
+            <!-- EMAIL -->
+
+            <div class="form-group">
+
+                <label>
+                    Email Address
+                </label>
+
+                <div class="input-box">
+
+                    <i class="fa-regular fa-envelope"></i>
+
+                    <input
+                        type="email"
+                        id="email"
+                        placeholder="Enter your email"
+                        required
+                    >
+
+                </div>
+
+            </div>
+
+
+
+            <!-- PASSWORD -->
+
+            <div class="form-group">
+
+                <div class="password-label">
+
+                    <label>
+                        Password
+                    </label>
+
+                    <a href="#">
+                        Forgot Password?
+                    </a>
+
+                </div>
+
+
+                <div class="input-box">
+
+                    <i class="fa-solid fa-lock"></i>
+
+                    <input
+                        type="password"
+                        id="password"
+                        placeholder="Enter your password"
+                        required
+                    >
+
+                    <button
+                        type="button"
+                        class="show-password"
+                        onclick="togglePassword()">
+
+                        <i
+                            class="fa-regular fa-eye"
+                            id="eyeIcon">
+                        </i>
+
+                    </button>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- REMEMBER -->
+
+            <div class="remember">
+
+                <label>
+
+                    <input
+                        type="checkbox"
+                        id="remember"
+                    >
+
+                    Remember me
+
+                </label>
+
+            </div>
+
+
+
+            <!-- LOGIN BUTTON -->
+
+            <button
+                type="submit"
+                class="login-button">
+
+                Log In
+
+                <i class="fa-solid fa-arrow-right"></i>
+
+            </button>
+
+
+            <div
+                class="message"
+                id="message">
+            </div>
+
+
+        </form>
+
+
+
+        <!-- DIVIDER -->
+
+        <div class="divider">
+
+            <span>
+                OR
+            </span>
+
+        </div>
+
+
+
+        <!-- GOOGLE LOGIN -->
+
+        <button class="google-btn">
+
+            <i class="fa-brands fa-google"></i>
+
+            Continue with Google
+
+        </button>
+
+
+
+        <!-- SIGN UP -->
+
+        <p class="signup-text">
+
+            Don't have an account?
+
+            <a href="signup.html">
+                Sign Up
+            </a>
+
+        </p>
+
+
+        <p class="terms">
+
+            By continuing, you agree to our
+
+            <a href="#">
+                Terms of Service
+            </a>
+
+            and
+
+            <a href="#">
+                Privacy Policy
+            </a>.
+
+        </p>
+
+
+    </div>
+
+</div>
+
+
+
+<script src="login.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore Courses | EduNova</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="explore-courses.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <header class="navbar">
+        <div class="logo">Edu<span>Nova</span></div>
+
+        <nav>
+            <a href="home.html">Home</a>
+            <a href="courses.html" class="active">Courses</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+
+        <button class="login-btn">Login</button>
+    </header>
+
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <p class="small-heading">LEARN • GROW • SUCCEED</p>
+
+            <h1>Explore Our <span>Courses</span></h1>
+
+            <p>
+                Discover high-quality courses designed to build your skills,
+                strengthen your knowledge and prepare you for the future.
+            </p>
+
+            <div class="search-box">
+                <input
+                    type="text"
+                    id="courseSearch"
+                    placeholder="Search for a course..."
+                >
+                <button onclick="searchCourses()">🔍 Search</button>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Categories -->
+    <section class="categories">
+
+        <h2>Explore by Category</h2>
+
+        <div class="category-container">
+
+            <button onclick="filterCourses('all')" class="category active">
+                All Courses
+            </button>
+
+            <button onclick="filterCourses('programming')" class="category">
+                💻 Programming
+            </button>
+
+            <button onclick="filterCourses('ai')" class="category">
+                🤖 AI & ML
+            </button>
+
+            <button onclick="filterCourses('web')" class="category">
+                🌐 Web Development
+            </button>
+
+            <button onclick="filterCourses('data')" class="category">
+                📊 Data Science
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- Courses -->
+    <section class="courses-section">
+
+        <div class="section-heading">
+            <div>
+                <p>POPULAR LEARNING PATHS</p>
+                <h2>Find the Right Course for You</h2>
+            </div>
+
+            <span id="courseCount">6 Courses</span>
+        </div>
+
+
+        <div class="course-grid" id="courseGrid">
+
+            <!-- Course 1 -->
+            <div class="course-card" data-category="programming" data-title="Python Programming">
+
+                <div class="course-image python">
+                    <span>PYTHON</span>
+                </div>
+
+                <div class="course-content">
+
+                    <span class="tag">Programming</span>
+
+                    <h3>Python Programming</h3>
+
+                    <p>
+                        Learn Python from basics to advanced concepts with
+                        practical coding examples.
+                    </p>
+
+                    <div class="course-info">
+                        <span>⭐ 4.9</span>
+                        <span>👥 2.5k Students</span>
+                    </div>
+
+                    <div class="course-bottom">
+                        <strong>₹999</strong>
+                        <button onclick="openCourse('Python Programming')">
+                            Explore
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+
+
+            <!-- Course 2 -->
+            <div class="course-card" data-category="ai" data-title="Artificial Intelligence">
+
+                <div class="course-image ai">
+                    <span>AI & ML</span>
+                </div>
+
+                <div class="course-content">
+
+                    <span class="tag">AI & ML</span>
+
+                    <h3>Artificial Intelligence</h3>
+
+                    <p>
+                        Understand AI concepts, machine learning algorithms
+                        and real-world applications.
+                    </p>
+
+                    <div class="course-info">
+                        <span>⭐ 4.8</span>
+                        <span>👥 1.8k Students</span>
+                    </div>
+
+                    <div class="course-bottom">
+                        <strong>₹1,499</strong>
+                        <button onclick="openCourse('Artificial Intelligence')">
+                            Explore
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+
+
+            <!-- Course 3 -->
+            <div class="course-card" data-category="web" data-title="Full Stack Web Development">
+
+                <div class="course-image web">
+                    <span>WEB DEV</span>
+                </div>
+
+                <div class="course-content">
+
+                    <span class="tag">Web Development</span>
+
+                    <h3>Full Stack Web Development</h3>
+
+                    <p>
+                        Build modern websites using HTML, CSS, JavaScript
+                        and backend technologies.
+                    </p>
+
+                    <div class="course-info">
+                        <span>⭐ 4.9</span>
+                        <span>👥 3.1k Students</span>
+                    </div>
+
+                    <div class="course-bottom">
+                        <strong>₹1,999</strong>
+                        <button onclick="openCourse('Full Stack Web Development')">
+                            Explore
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+
+
+            <!-- Course 4 -->
+            <div class="course-card" data-category="data" data-title="Data Science">
+
+                <div class="course-image data">
+                    <span>DATA</span>
+                </div>
+
+                <div class="course-content">
+
+                    <span class="tag">Data Science</span>
+
+                    <h3>Data Science</h3>
+
+                    <p>
+                        Learn data analysis, statistics, visualization and
+                        machine learning techniques.
+                    </p>
+
+                    <div class="course-info">
+                        <span>⭐ 4.7</span>
+                        <span>👥 2.2k Students</span>
+                    </div>
+
+                    <div class="course-bottom">
+                        <strong>₹1,799</strong>
+                        <button onclick="openCourse('Data Science')">
+                            Explore
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+
+
+            <!-- Course 5 -->
+            <div class="course-card" data-category="programming" data-title="Java Programming">
+
+                <div class="course-image java">
+                    <span>JAVA</span>
+                </div>
+
+                <div class="course-content">
+
+                    <span class="tag">Programming</span>
+
+                    <h3>Java Programming</h3>
+
+                    <p>
+                        Master Java programming and object-oriented
+                        programming concepts.
+                    </p>
+
+                    <div class="course-info">
+                        <span>⭐ 4.8</span>
+                        <span>👥 1.9k Students</span>
+                    </div>
+
+                    <div class="course-bottom">
+                        <strong>₹1,199</strong>
+                        <button onclick="openCourse('Java Programming')">
+                            Explore
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+
+
+            <!-- Course 6 -->
+            <div class="course-card" data-category="web" data-title="UI UX Design">
+
+                <div class="course-image design">
+                    <span>UI / UX</span>
+                </div>
+
+                <div class="course-content">
+
+                    <span class="tag">Design</span>
+
+                    <h3>UI/UX Design</h3>
+
+                    <p>
+                        Learn how to create attractive, user-friendly and
+                        modern digital experiences.
+                    </p>
+
+                    <div class="course-info">
+                        <span>⭐ 4.9</span>
+                        <span>👥 1.5k Students</span>
+                    </div>
+
+                    <div class="course-bottom">
+                        <strong>₹899</strong>
+                        <button onclick="openCourse('UI/UX Design')">
+                            Explore
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+        <p id="noResults">No courses found.</p>
+
+    </section>
+
+
+    <!-- CTA -->
+    <section class="cta">
+
+        <h2>Start Learning Today</h2>
+
+        <p>
+            Choose a course, build your skills and take the next step
+            towards your career.
+        </p>
+
+        <button onclick="window.scrollTo({top: 0, behavior: 'smooth'})">
+            Explore Courses
+        </button>
+
+    </section>
+
+
+    <footer>
+        <div class="logo">Edu<span>Nova</span></div>
+        <p>© 2026 EduNova. Learn Anytime, Anywhere.</p>
+    </footer>
+
+
+    <script src="explore-courses.js"></script>
+
+</body>
+</html>

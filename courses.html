@@ -1,0 +1,701 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>EduNova | Courses</title>
+
+    <link rel="stylesheet" href="courses.css">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Icons -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+
+<!-- ================= NAVBAR ================= -->
+
+<header class="navbar">
+
+    <div class="logo">
+        <i class="fa-solid fa-graduation-cap"></i>
+        Edu<span>Nova</span>
+    </div>
+
+    <nav>
+        <a href="home.html">Home</a>
+        <a href="#" class="active">Courses</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+    <div class="nav-buttons">
+        <button class="login-btn">Log In</button>
+        <button class="signup-btn">Sign Up</button>
+    </div>
+
+</header>
+
+
+<!-- ================= HERO ================= -->
+
+<section class="course-hero">
+
+    <div class="hero-content">
+
+        <span class="small-heading">EXPLORE OUR COURSES</span>
+
+        <h1>
+            Learn Skills That
+            <span>Shape Your Future</span>
+        </h1>
+
+        <p>
+            Discover high-quality courses designed by industry experts.
+            Learn at your own pace and build skills that matter.
+        </p>
+
+        <div class="search-box">
+
+            <i class="fa-solid fa-magnifying-glass"></i>
+
+            <input
+                type="text"
+                placeholder="Search for courses..."
+            >
+
+            <button>Search</button>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= CATEGORIES ================= -->
+
+<section class="categories">
+
+    <div class="section-heading">
+        <span>LEARN YOUR WAY</span>
+        <h2>Explore Categories</h2>
+        <p>Choose from a wide range of subjects and start learning today.</p>
+    </div>
+
+    <div class="category-container">
+
+        <div class="category-card">
+            <div class="category-icon blue">
+                <i class="fa-solid fa-code"></i>
+            </div>
+            <h3>Programming</h3>
+            <p>24 Courses</p>
+        </div>
+
+        <div class="category-card">
+            <div class="category-icon purple">
+                <i class="fa-solid fa-brain"></i>
+            </div>
+            <h3>Artificial Intelligence</h3>
+            <p>18 Courses</p>
+        </div>
+
+        <div class="category-card">
+            <div class="category-icon green">
+                <i class="fa-solid fa-chart-line"></i>
+            </div>
+            <h3>Data Science</h3>
+            <p>16 Courses</p>
+        </div>
+
+        <div class="category-card">
+            <div class="category-icon orange">
+                <i class="fa-solid fa-globe"></i>
+            </div>
+            <h3>Web Development</h3>
+            <p>22 Courses</p>
+        </div>
+
+        <div class="category-card">
+            <div class="category-icon pink">
+                <i class="fa-solid fa-palette"></i>
+            </div>
+            <h3>Design</h3>
+            <p>15 Courses</p>
+        </div>
+
+        <div class="category-card">
+            <div class="category-icon cyan">
+                <i class="fa-solid fa-business-time"></i>
+            </div>
+            <h3>Business</h3>
+            <p>12 Courses</p>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= POPULAR COURSES ================= -->
+
+<section class="courses-section">
+
+    <div class="course-header">
+
+        <div>
+            <span class="section-label">TOP COURSES</span>
+            <h2>Popular Courses</h2>
+            <p>Learn from courses loved by thousands of students.</p>
+        </div>
+
+        <button class="view-all">
+            View All <i class="fa-solid fa-arrow-right"></i>
+        </button>
+
+    </div>
+
+
+    <div class="course-grid">
+
+
+        <!-- COURSE 1 -->
+
+        <div class="course-card">
+
+            <div class="course-image programming">
+                <i class="fa-solid fa-code"></i>
+
+                <span class="course-badge">BESTSELLER</span>
+            </div>
+
+            <div class="course-info">
+
+                <div class="course-category">
+                    PROGRAMMING
+                </div>
+
+                <h3>
+                    Complete Python Programming
+                    Masterclass
+                </h3>
+
+                <p class="course-description">
+                    Learn Python from beginner to advanced
+                    level with practical projects.
+                </p>
+
+                <div class="course-rating">
+
+                    <strong>4.9</strong>
+
+                    <span class="stars">
+                        ★★★★★
+                    </span>
+
+                    <span>(2,340)</span>
+
+                </div>
+
+                <div class="course-details">
+
+                    <span>
+                        <i class="fa-regular fa-clock"></i>
+                        32 Hours
+                    </span>
+
+                    <span>
+                        <i class="fa-solid fa-layer-group"></i>
+                        18 Lessons
+                    </span>
+
+                </div>
+
+                <div class="course-bottom">
+
+                    <div class="price">
+                        ₹799
+                        <del>₹1,999</del>
+                    </div>
+
+                    <button class="enroll-btn">
+                        Enroll
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- COURSE 2 -->
+
+        <div class="course-card">
+
+            <div class="course-image ai">
+
+                <i class="fa-solid fa-brain"></i>
+
+                <span class="course-badge">
+                    POPULAR
+                </span>
+
+            </div>
+
+            <div class="course-info">
+
+                <div class="course-category">
+                    ARTIFICIAL INTELLIGENCE
+                </div>
+
+                <h3>
+                    Artificial Intelligence
+                    & Machine Learning
+                </h3>
+
+                <p class="course-description">
+                    Master AI and ML concepts with real-world
+                    projects and datasets.
+                </p>
+
+                <div class="course-rating">
+
+                    <strong>4.8</strong>
+
+                    <span class="stars">
+                        ★★★★★
+                    </span>
+
+                    <span>(1,870)</span>
+
+                </div>
+
+                <div class="course-details">
+
+                    <span>
+                        <i class="fa-regular fa-clock"></i>
+                        40 Hours
+                    </span>
+
+                    <span>
+                        <i class="fa-solid fa-layer-group"></i>
+                        24 Lessons
+                    </span>
+
+                </div>
+
+                <div class="course-bottom">
+
+                    <div class="price">
+                        ₹999
+                        <del>₹2,499</del>
+                    </div>
+
+                    <button class="enroll-btn">
+                        Enroll
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- COURSE 3 -->
+
+        <div class="course-card">
+
+            <div class="course-image web">
+
+                <i class="fa-solid fa-globe"></i>
+
+                <span class="course-badge">
+                    NEW
+                </span>
+
+            </div>
+
+            <div class="course-info">
+
+                <div class="course-category">
+                    WEB DEVELOPMENT
+                </div>
+
+                <h3>
+                    Full Stack Web Development
+                </h3>
+
+                <p class="course-description">
+                    Build modern websites and full-stack
+                    applications from scratch.
+                </p>
+
+                <div class="course-rating">
+
+                    <strong>4.9</strong>
+
+                    <span class="stars">
+                        ★★★★★
+                    </span>
+
+                    <span>(1,250)</span>
+
+                </div>
+
+                <div class="course-details">
+
+                    <span>
+                        <i class="fa-regular fa-clock"></i>
+                        45 Hours
+                    </span>
+
+                    <span>
+                        <i class="fa-solid fa-layer-group"></i>
+                        30 Lessons
+                    </span>
+
+                </div>
+
+                <div class="course-bottom">
+
+                    <div class="price">
+                        ₹1,199
+                        <del>₹2,999</del>
+                    </div>
+
+                    <button class="enroll-btn">
+                        Enroll
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- COURSE 4 -->
+
+        <div class="course-card">
+
+            <div class="course-image data">
+
+                <i class="fa-solid fa-chart-line"></i>
+
+            </div>
+
+            <div class="course-info">
+
+                <div class="course-category">
+                    DATA SCIENCE
+                </div>
+
+                <h3>
+                    Data Science & Analytics
+                </h3>
+
+                <p class="course-description">
+                    Learn statistics, Python, visualization
+                    and data analysis.
+                </p>
+
+                <div class="course-rating">
+
+                    <strong>4.7</strong>
+
+                    <span class="stars">
+                        ★★★★★
+                    </span>
+
+                    <span>(980)</span>
+
+                </div>
+
+                <div class="course-details">
+
+                    <span>
+                        <i class="fa-regular fa-clock"></i>
+                        36 Hours
+                    </span>
+
+                    <span>
+                        <i class="fa-solid fa-layer-group"></i>
+                        21 Lessons
+                    </span>
+
+                </div>
+
+                <div class="course-bottom">
+
+                    <div class="price">
+                        ₹899
+                        <del>₹2,299</del>
+                    </div>
+
+                    <button class="enroll-btn">
+                        Enroll
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- COURSE 5 -->
+
+        <div class="course-card">
+
+            <div class="course-image java">
+
+                <i class="fa-brands fa-java"></i>
+
+            </div>
+
+            <div class="course-info">
+
+                <div class="course-category">
+                    PROGRAMMING
+                </div>
+
+                <h3>
+                    Java & Object Oriented Programming
+                </h3>
+
+                <p class="course-description">
+                    Master Java, OOP concepts and
+                    problem-solving techniques.
+                </p>
+
+                <div class="course-rating">
+
+                    <strong>4.8</strong>
+
+                    <span class="stars">
+                        ★★★★★
+                    </span>
+
+                    <span>(1,420)</span>
+
+                </div>
+
+                <div class="course-details">
+
+                    <span>
+                        <i class="fa-regular fa-clock"></i>
+                        28 Hours
+                    </span>
+
+                    <span>
+                        <i class="fa-solid fa-layer-group"></i>
+                        20 Lessons
+                    </span>
+
+                </div>
+
+                <div class="course-bottom">
+
+                    <div class="price">
+                        ₹699
+                        <del>₹1,799</del>
+                    </div>
+
+                    <button class="enroll-btn">
+                        Enroll
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- COURSE 6 -->
+
+        <div class="course-card">
+
+            <div class="course-image design">
+
+                <i class="fa-solid fa-pen-ruler"></i>
+
+            </div>
+
+            <div class="course-info">
+
+                <div class="course-category">
+                    DESIGN
+                </div>
+
+                <h3>
+                    UI/UX Design Masterclass
+                </h3>
+
+                <p class="course-description">
+                    Learn UI/UX design, Figma and create
+                    beautiful digital experiences.
+                </p>
+
+                <div class="course-rating">
+
+                    <strong>4.9</strong>
+
+                    <span class="stars">
+                        ★★★★★
+                    </span>
+
+                    <span>(760)</span>
+
+                </div>
+
+                <div class="course-details">
+
+                    <span>
+                        <i class="fa-regular fa-clock"></i>
+                        25 Hours
+                    </span>
+
+                    <span>
+                        <i class="fa-solid fa-layer-group"></i>
+                        16 Lessons
+                    </span>
+
+                </div>
+
+                <div class="course-bottom">
+
+                    <div class="price">
+                        ₹749
+                        <del>₹1,999</del>
+                    </div>
+
+                    <button class="enroll-btn">
+                        Enroll
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= CTA ================= -->
+
+<section class="cta">
+
+    <div class="cta-content">
+
+        <div class="cta-icon">
+            <i class="fa-solid fa-rocket"></i>
+        </div>
+
+        <h2>
+            Ready to Start Learning?
+        </h2>
+
+        <p>
+            Join thousands of learners and start building
+            your future today.
+        </p>
+
+
+        <button onclick="window.location.href='explore-courses.html'">
+             Explore Courses
+            <i class="fa-solid fa-arrow-right"></i>
+        </button>
+
+    </div>
+
+</section>
+
+
+<!-- ================= FOOTER ================= -->
+
+<footer>
+
+    <div class="footer-content">
+
+        <div class="footer-brand">
+
+            <div class="logo">
+                <i class="fa-solid fa-graduation-cap"></i>
+                Edu<span>Nova</span>
+            </div>
+
+            <p>
+                Learn anytime, anywhere and build
+                skills for your future.
+            </p>
+
+            <div class="socials">
+
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-linkedin"></i>
+                <i class="fa-brands fa-youtube"></i>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-column">
+
+            <h4>Platform</h4>
+
+            <a href="#">Courses</a>
+            <a href="#">Instructors</a>
+            <a href="#">Pricing</a>
+            <a href="#">Certificates</a>
+
+        </div>
+
+
+        <div class="footer-column">
+
+            <h4>Company</h4>
+
+            <a href="#">About Us</a>
+            <a href="#">Contact</a>
+            <a href="#">Careers</a>
+            <a href="#">Blog</a>
+
+        </div>
+
+
+        <div class="footer-column">
+
+            <h4>Support</h4>
+
+            <a href="#">Help Center</a>
+            <a href="#">FAQs</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms</a>
+
+        </div>
+
+    </div>
+
+    <div class="copyright">
+        © 2026 EduNova. All Rights Reserved.
+    </div>
+
+</footer>
+<script src="courses.js"></script>
+
+</body>
+</html>

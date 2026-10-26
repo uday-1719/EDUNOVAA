@@ -1,0 +1,561 @@
+/* =========================
+   GLOBAL
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+
+    min-height: 100vh;
+
+    display: flex;
+
+    background: #f8fafc;
+
+    color: #172033;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/* =========================
+   LEFT SIDE
+========================= */
+
+.signup-left {
+    width: 50%;
+
+    min-height: 100vh;
+
+    display: flex;
+    align-items: center;
+
+    padding: 60px 8%;
+
+    color: white;
+
+    background:
+        linear-gradient(
+            135deg,
+            #2563eb,
+            #4f46e5
+        );
+}
+
+.left-content {
+    width: 100%;
+    max-width: 560px;
+}
+
+
+/* LOGO */
+
+.logo {
+    font-size: 27px;
+
+    font-weight: 700;
+}
+
+.logo i {
+    margin-right: 7px;
+}
+
+.logo span {
+    color: #dbeafe;
+}
+
+
+/* HERO */
+
+.hero-text {
+    margin-top: 95px;
+}
+
+.hero-text > span {
+    font-size: 11px;
+
+    font-weight: 700;
+
+    letter-spacing: 2px;
+
+    color: #bfdbfe;
+}
+
+.hero-text h1 {
+    font-size: 48px;
+
+    line-height: 1.25;
+
+    margin: 15px 0 20px;
+}
+
+.hero-text h1 strong {
+    display: block;
+
+    color: #bfdbfe;
+}
+
+.hero-text p {
+    max-width: 500px;
+
+    font-size: 14px;
+
+    line-height: 1.8;
+
+    color: #dbeafe;
+}
+
+
+/* =========================
+   STATS
+========================= */
+
+.stats {
+    display: flex;
+
+    gap: 50px;
+
+    margin-top: 55px;
+
+    padding-top: 25px;
+
+    border-top: 1px solid rgba(255,255,255,0.2);
+}
+
+.stat h3 {
+    font-size: 22px;
+
+    margin-bottom: 4px;
+}
+
+.stat p {
+    font-size: 10px;
+
+    color: #bfdbfe;
+}
+
+
+/* =========================
+   QUOTE
+========================= */
+
+.quote {
+    display: flex;
+
+    gap: 15px;
+
+    margin-top: 50px;
+
+    max-width: 430px;
+
+    color: #dbeafe;
+}
+
+.quote i {
+    font-size: 20px;
+
+    color: #93c5fd;
+}
+
+.quote p {
+    font-size: 12px;
+
+    line-height: 1.7;
+
+    font-style: italic;
+}
+
+
+/* =========================
+   RIGHT SIDE
+========================= */
+
+.signup-right {
+    width: 50%;
+
+    min-height: 100vh;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    padding: 40px;
+}
+
+.signup-container {
+    width: 100%;
+
+    max-width: 500px;
+}
+
+
+/* MOBILE LOGO */
+
+.mobile-logo {
+    display: none;
+}
+
+
+/* HEADING */
+
+.signup-heading {
+    margin-bottom: 28px;
+}
+
+.signup-heading h2 {
+    font-size: 29px;
+
+    margin-bottom: 6px;
+}
+
+.signup-heading p {
+    color: #667085;
+
+    font-size: 12px;
+}
+
+
+/* =========================
+   FORM
+========================= */
+
+.form-row {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 15px;
+}
+
+.form-group {
+    margin-bottom: 18px;
+}
+
+.form-group label {
+    display: block;
+
+    font-size: 11px;
+
+    font-weight: 600;
+
+    color: #344054;
+
+    margin-bottom: 7px;
+}
+
+
+/* INPUT */
+
+.input-box {
+    height: 46px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 9px;
+
+    border: 1px solid #dce3ee;
+
+    border-radius: 8px;
+
+    background: white;
+
+    padding: 0 13px;
+
+    transition: 0.2s;
+}
+
+.input-box:focus-within {
+    border-color: #2563eb;
+
+    box-shadow:
+        0 0 0 3px rgba(37,99,235,0.08);
+}
+
+.input-box > i {
+    color: #98a2b3;
+
+    font-size: 13px;
+}
+
+.input-box input {
+    flex: 1;
+
+    width: 100%;
+    height: 100%;
+
+    border: none;
+
+    outline: none;
+
+    font-family: inherit;
+
+    font-size: 11px;
+
+    color: #344054;
+}
+
+.input-box input::placeholder {
+    color: #a4acb9;
+}
+
+
+/* PASSWORD BUTTON */
+
+.show-password {
+    border: none;
+
+    background: transparent;
+
+    color: #98a2b3;
+
+    cursor: pointer;
+
+    padding: 5px;
+}
+
+
+/* =========================
+   TERMS
+========================= */
+
+.terms-check {
+    margin: 5px 0 20px;
+
+    font-size: 10px;
+
+    color: #667085;
+
+    line-height: 1.6;
+}
+
+.terms-check label {
+    display: flex;
+
+    align-items: flex-start;
+
+    gap: 8px;
+
+    cursor: pointer;
+}
+
+.terms-check input {
+    margin-top: 3px;
+
+    accent-color: #2563eb;
+}
+
+.terms-check a {
+    color: #2563eb;
+
+    font-weight: 500;
+}
+
+
+/* =========================
+   SIGNUP BUTTON
+========================= */
+
+.signup-button {
+    width: 100%;
+
+    height: 47px;
+
+    border: none;
+
+    border-radius: 8px;
+
+    background: #2563eb;
+
+    color: white;
+
+    font-size: 12px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.signup-button:hover {
+    background: #1d4ed8;
+
+    transform: translateY(-1px);
+}
+
+.signup-button i {
+    margin-left: 7px;
+}
+
+
+/* MESSAGE */
+
+.message {
+    text-align: center;
+
+    min-height: 15px;
+
+    margin-top: 10px;
+
+    font-size: 10px;
+}
+
+
+/* =========================
+   DIVIDER
+========================= */
+
+.divider {
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+    margin: 22px 0;
+
+    color: #98a2b3;
+
+    font-size: 9px;
+}
+
+.divider::before,
+.divider::after {
+    content: "";
+
+    height: 1px;
+
+    flex: 1;
+
+    background: #e5eaf1;
+}
+
+
+/* =========================
+   GOOGLE
+========================= */
+
+.google-btn {
+    width: 100%;
+
+    height: 44px;
+
+    border: 1px solid #dce3ee;
+
+    border-radius: 8px;
+
+    background: white;
+
+    color: #344054;
+
+    font-size: 11px;
+
+    font-weight: 500;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.google-btn:hover {
+    background: #f8fafc;
+
+    border-color: #cbd5e1;
+}
+
+.google-btn i {
+    color: #4285f4;
+
+    margin-right: 8px;
+
+    font-size: 14px;
+}
+
+
+/* =========================
+   LOGIN
+========================= */
+
+.login-text {
+    text-align: center;
+
+    margin-top: 23px;
+
+    color: #667085;
+
+    font-size: 11px;
+}
+
+.login-text a {
+    color: #2563eb;
+
+    font-weight: 600;
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 950px) {
+
+    .signup-left {
+        display: none;
+    }
+
+    .signup-right {
+        width: 100%;
+
+        padding: 30px 20px;
+    }
+
+    .signup-container {
+        max-width: 500px;
+    }
+
+    .mobile-logo {
+        display: block;
+
+        text-align: center;
+
+        margin-bottom: 45px;
+    }
+
+    .mobile-logo .logo {
+        color: #2563eb;
+    }
+
+    .mobile-logo .logo span {
+        color: #172033;
+    }
+
+}
+
+
+@media (max-width: 550px) {
+
+    .signup-right {
+        padding: 25px 18px;
+    }
+
+    .form-row {
+        grid-template-columns: 1fr;
+
+        gap: 0;
+    }
+
+    .signup-heading h2 {
+        font-size: 25px;
+    }
+
+}
